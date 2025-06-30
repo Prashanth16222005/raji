@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday cuite 💝</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Page 1: Welcome -->
+  <div class="card" id="page1">
+    <img src="bestie.jpg" alt="Bestie" class="bestie-photo" />
+    <div class="cake">🎂</div>
+    <h1 id="typewriter"></h1>
+    <button onclick="nextPage('page1', 'page2')">Continue 💌</button>
+  </div>
+
+  <!-- Page 2: Wishes -->
+  <div class="card hidden" id="page2">
+    <h2>Wishes from the Heart ❤️</h2>
+    <ul class="wishes">
+      <li>Happy Birthday to the one who knows me best 💫</li>
+      <li>You're more than a friend—you're something spl💖</li>
+      <li>May this year be filled with endless smiles 🌟</li>
+      <li>Thank you for every memory and moment 💖</li>
+    </ul>
+    <button onclick="nextPage('page2', 'page3')">Memories 📸</button>
+  </div>
+
+  <!-- Page 3: Slideshow -->
+  <div class="card hidden" id="page3">
+    <h2>Our Moments Together 💞</h2>
+    <div class="slideshow">
+      <img src="memory1.jpg" class="slide" />
+      <img src="memory2.jpg" class="slide" />
+      <img src="memory3.jpg" class="slide" />
+       <img src="memory4.jpg" class="slide" />
+    </div>
+    <button onclick="nextPage('page3', 'page4')">Final Note 🎁</button>
+  </div>
+
+  <!-- Page 4: Thank you -->
+  <div class="card hidden" id="page4">
+    <h2>Just for You, My dear 💕</h2>
+    <p class="final"><p style="font-size: 18px; line-height: 1.8; text-align: center;">
+  No words can ever truly express how much you mean to me.<br>
+  You've been my strength, my laughter, my comfort, and my chaos — all in one beautiful soul.<br><br>
+  
+  Thank you for being the amazing YOU — kind, thoughtful, fierce, and absolutely irreplaceable.<br><br>
+
+  On your special day, I just want you to know: the world is so much better with you in it.<br>
+  May your day be as bright as your smile, as magical as your spirit, and as unforgettable as our friendship.<br><br>
+
+  Happy Birthday once again, raji💕 . Here's to more late-night talks, uncontrollable laughter, and endless memories together!<br>
+  You deserve every bit of happiness today and always. 💫🎂
+</p>
+🎉</p>
+    <p style="margin-top: 20px;">— From Your Psycho💌</p>
+  </div>
+  <audio id="bdaySong" src="tumsehi.mp3" autoplay loop></audio>
+  <script src="confetti.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
